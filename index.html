@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">  
+<!-- Max2K -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8">
+        <title>max</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="max">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="index.html"/>
+        <meta name="theme-color" content="#0ced13">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <script>
+                function audioPlay() {
+                    var audio = document.getElementById("audio");
+                    audio.volume = 0.1;
+                    audio.play()
+                }
+                function videoPlay() {
+                    var video = document.getElementById("video");
+                    video.play()
+                }
+            </script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle">
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: Vampire Wars; font-size: 0.6em;">ready to enter?</span>
+                    <span class="hover" style="font-family: mono; font-size: 0.6em;">welcome, click to enter.</span>
+                </label>
+            </div>
+            <audio loop preload="auto" id="audio">
+                <source src="Video & Sound/music.mp3" type="audio/mp3">
+            </audio>
+            <video muted loop playsinline preload="auto" class="fullscreen bg-video" id="video">
+                <source src="Video & Sound/bg-video.mp4" type="video/mp4">
+            </video>
+            <section class="fullscreen text-content">
+                <h1 style="font-family: Vampire Wars; text-shadow: 0 0 0.40em #bababa;">MAX2K.XYZ</h1>
+               <div class='test-fix'>
+              </div>
+                full-stack dev
+              <div class='test-fix'>
+                <a href="https://discord.com/users/394832601593937930" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">discord</a>
+                /
+                <a href="https://twitter.com/maxvlrt_" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">twitter</a>
+                /
+                <a href="https://github.com/T8EZ" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">github</a>
+              </div>
+            </section>
+            </div>
+        </main>
+    </body>
