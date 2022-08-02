@@ -1,0 +1,5 @@
+Upload ur own Video & Background into this folder
+
+Here is what the names should be:
+ - Video Name - bg-video.mp4
+ - Music File Name - music.mp3
